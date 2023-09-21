@@ -2,6 +2,7 @@
 import FirstComponent from './components/FirstComponent';
 import SecondComponent from './components/SecondComponent';
 import ThirdComponent from './components/ThirdComponent';
+import TemplateExpress from './components/TemplateExpress';
 //style css
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
     <FirstComponent/>
     <SecondComponent/>
     <ThirdComponent/>
+    <TemplateExpress/>
     </div>
   );
 }
