@@ -5,9 +5,11 @@ import ThirdComponent from './components/ThirdComponent';
 import TemplateExpress from './components/TemplateExpress';
 import MyComponent from './components/MyComponent';
 import Events from './components/Events';
+import Challenge from './components/Challenge';
 
 //style css
 import './App.css';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <TemplateExpress/>
     <MyComponent/>
     <Events/>
+    <Challenge/>
     </div>
   );
 }
