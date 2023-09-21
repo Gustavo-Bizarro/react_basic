@@ -4,10 +4,10 @@ import SecondComponent from './components/SecondComponent';
 import ThirdComponent from './components/ThirdComponent';
 import TemplateExpress from './components/TemplateExpress';
 import MyComponent from './components/MyComponent';
+import Events from './components/Events';
+
 //style css
 import './App.css';
-
-
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
     <ThirdComponent/>
     <TemplateExpress/>
     <MyComponent/>
+    <Events/>
     </div>
   );
 }
