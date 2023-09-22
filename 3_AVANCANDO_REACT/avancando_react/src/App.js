@@ -2,7 +2,12 @@
 import City from './assets/city.jpg'
 import gustavo from './assets/gustavo.png';
 
+//Components
+import ManageData from './Components/ManageData';
+
+//import do css
 import './App.css';
+
 
 
 function App() {
@@ -17,6 +22,7 @@ function App() {
       <div>
         <img src={City} alt="Cidade durante a noite" />
         <img src={gustavo} alt="Imagem do Gustavo" />
+        <ManageData/>
       
       </div>
     </div>
