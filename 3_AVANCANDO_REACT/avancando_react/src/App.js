@@ -4,6 +4,7 @@ import gustavo from './assets/gustavo.png';
 
 //Components
 import ManageData from './Components/ManageData';
+import ListRender from './Components/ListRender';
 
 //import do css
 import './App.css';
@@ -23,6 +24,8 @@ function App() {
         <img src={City} alt="Cidade durante a noite" />
         <img src={gustavo} alt="Imagem do Gustavo" />
         <ManageData/>
+        <ListRender/>
+
       
       </div>
     </div>
