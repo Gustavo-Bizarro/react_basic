@@ -5,9 +5,11 @@ import gustavo from './assets/gustavo.png';
 //Components
 import ManageData from './Components/ManageData';
 import ListRender from './Components/ListRender';
+import CondicionalRender from './Components/CondicionalRender';
 
 //import do css
 import './App.css';
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
         <img src={gustavo} alt="Imagem do Gustavo" />
         <ManageData/>
         <ListRender/>
+        <CondicionalRender/>
 
       
       </div>
