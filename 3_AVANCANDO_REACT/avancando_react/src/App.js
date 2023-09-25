@@ -10,6 +10,8 @@ import ManageData from './Components/ManageData';
 import ListRender from './Components/ListRender';
 import CondicionalRender from './Components/CondicionalRender';
 import Fragments from './Components/Fragments';
+import Container from './Components/Container';
+
 
 //props
 import ShowName from './Components/ShowName';
@@ -19,10 +21,6 @@ import CarDetails from './Components/CarDetails';
 
 //import do css
 import './App.css';
-
-
-
-
 
 
 function App() {
@@ -75,6 +73,14 @@ function App() {
 
           <Fragments propFragment='Teste'/>
 
+          {/*children*/}
+          <Container myVelue="teste">
+            <p>E este é um conteúdo</p>
+            </Container>  
+
+            <Container myVelue="teste 2">
+            <p>testando o containar</p>
+            </Container>
        </div>
     </div>
   );
