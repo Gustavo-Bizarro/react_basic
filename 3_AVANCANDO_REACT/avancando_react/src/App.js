@@ -11,7 +11,7 @@ import ListRender from './Components/ListRender';
 import CondicionalRender from './Components/CondicionalRender';
 import Fragments from './Components/Fragments';
 import Container from './Components/Container';
-
+import ExecuteFuncao from './Components/ExecuteFuncao';
 
 //props
 import ShowName from './Components/ShowName';
@@ -21,6 +21,7 @@ import CarDetails from './Components/CarDetails';
 
 //import do css
 import './App.css';
+
 
 
 function App() {
@@ -33,6 +34,12 @@ function App() {
     {id: 2, brand: "Lamborguini", color: "Verde", age: 2022, newCar: false, km: 100},
     {id: 3, brand: "Ferrari", color: "Preta", age: 2021, newCar: false, km: 200}
   ]
+
+  function showMessage(){
+    console.log("evento do componente pai")
+  }
+
+
   //const name = "joaquim"
   const [userName] = useState("Maria")
   return (
@@ -63,6 +70,7 @@ function App() {
         {/*Loop em array de objetos*/}
         {cars.map((car) => (
           <CarDetails 
+          key={car.id}
           brand={car.brand} 
           color={car.brand}  
           km={car.km} 
@@ -81,6 +89,11 @@ function App() {
             <Container myVelue="teste 2">
             <p>testando o containar</p>
             </Container>
+
+            {/*Executar função*/}
+          <ExecuteFuncao myFuncao={showMessage} />
+
+
        </div>
     </div>
   );
