@@ -12,6 +12,8 @@ import CondicionalRender from './Components/CondicionalRender';
 import Fragments from './Components/Fragments';
 import Container from './Components/Container';
 import ExecuteFuncao from './Components/ExecuteFuncao';
+import Message from './Components/Message';
+import ChangeMessageState from './Components/ChangeMessageState';
 
 //props
 import ShowName from './Components/ShowName';
@@ -21,6 +23,8 @@ import CarDetails from './Components/CarDetails';
 
 //import do css
 import './App.css';
+
+
 
 
 
@@ -39,6 +43,11 @@ function App() {
     console.log("evento do componente pai")
   }
 
+  const [message, setMessage] = useState("")
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
 
   //const name = "joaquim"
   const [userName] = useState("Maria")
@@ -93,9 +102,15 @@ function App() {
             {/*Executar função*/}
           <ExecuteFuncao myFuncao={showMessage} />
 
+          {/*state lift*/}
+          <Message msg={message}/>
+          <ChangeMessageState handleMessage={handleMessage}/>
 
-       </div>
-    </div>
+
+
+         </div>
+         
+      </div>
   );
 }
 
