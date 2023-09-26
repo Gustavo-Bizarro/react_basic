@@ -21,8 +21,13 @@ import ShowName from './Components/ShowName';
 //Destructuing
 import CarDetails from './Components/CarDetails';
 
+//Desafio 4
+import UserDetails from './Components/UserDetails';
+
 //import do css
 import './App.css';
+
+
 
 
 
@@ -48,6 +53,14 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg)
   }
+  
+  //desafio 4
+  const users = [
+    {id: 1, name:"Gustavo", idade: 16, profissão:"dev", sexo: "Masculino", nacionalidade: "brasileiro"},
+    {id: 2, name:"Gilmar", idade: 18, profissão:"Professor" , sexo: "Masculino", nacionalidade: "espanho"},
+    {id: 3, name:"Bianca", idade: 15, profissão:"Manicure", sexo: "feminino", nacionalidade: "argentino"},
+    {id: 3, name:"Julia", idade: 19, profissão:"Empresária", sexo: "feminino", nacionalidade: "uruguaio"}
+  ]
 
   //const name = "joaquim"
   const [userName] = useState("Maria")
@@ -106,7 +119,17 @@ function App() {
           <Message msg={message}/>
           <ChangeMessageState handleMessage={handleMessage}/>
 
-
+          {/*desafio 4*/}
+         
+          {users.map((user) =>(
+             <UserDetails 
+             key={user.id} 
+             nome={user.name} 
+             idade={user.idade} 
+             profissão={user.profissão} 
+             nacionalidade={user.nacionalidade} 
+             sexo={user.sexo}/>
+          ))}
 
          </div>
          
