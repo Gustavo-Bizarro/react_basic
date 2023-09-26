@@ -9,7 +9,7 @@ const UserDetails = ({nome, idade, profissão, sexo, nacionalidade}) => {
         <p>Me reconheço como: {sexo}</p>
         <p>Sou natural de: {nacionalidade}</p>
 
-        {idade >= 18 ?(<p><strong>Posso tirar minha habilitaçã</strong>o</p>) : (<p><strong>Ainda sou de menor de idade e não posso ter habilitação de motorista</strong></p>)}
+        {idade >= 18 ?(<p><strong>Posso tirar minha habilitação</strong></p>) : (<p><strong>Ainda sou de menor de idade e não posso ter habilitação de motorista</strong></p>)}
     </div>
   )
 }
